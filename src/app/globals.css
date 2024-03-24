@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --primary-100:#003366;
+  --primary-200:#3f5c94;
+  --primary-300:#a1b8f8;
+  --accent-100:#66CCFF;
+  --accent-200:#006d9b;
+  --text-100:#FFFFFF;
+  --text-200:#e0e0e0;
+  --bg-100:#1A1A1A;
+  --bg-200:#292929;
+  --bg-300:#404040;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --primary-100:#003366;
+    --primary-200:#3f5c94;
+    --primary-300:#a1b8f8;
+    --accent-100:#66CCFF;
+    --accent-200:#006d9b;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#1A1A1A;
+    --bg-200:#292929;
+    --bg-300:#404040;
+  }
+}
+
+.body {
+  color: var(--text-100);
+  background: var(--bg-100);
+}
+
+@layer utilities {
+  /* Back Ground */
+  .bg-100 {
+    background-color: var(--bg-100);
+  }
+  .bg-100-transparent {
+    background-color: rgba(26, 26, 26, 0.5);
+  }
+  .bg-200 {
+    background-color: var(--bg-100);
+  }
+  .bg-300 {
+    background-color: var(--bg-100);
+  }
+  .bg-primary-100 {
+    background-color: var(--primary-100);
+  }
+  .bg-primary-200 {
+    background-color: var(--primary-200);
+  }
+  .bg-primary-300 {
+    background-color: var(--primary-300);
+  }
+  .bg-accent-100 {
+    background-color: var(--accent-100);
+  }
+
+  /* Text */
+  .text-100 {
+    color: var(--text-100)
+  }
+  .text-200 {
+    color: var(--text-200)
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%); /* Adjust this value to control the scrolling distance */
+  }
+}
+
+.image-scroll {
+  animation: scroll 10s linear infinite;
+}
