@@ -14,17 +14,32 @@ import {
   FaCss3,
   FaGithub,
   FaLaptopCode,
+  FaBug,
+  FaScaleUnbalanced,
 } from "react-icons/fa6";
-import { GoCpu } from "react-icons/go";
+import { 
+  GoCpu,
+  GoFileDirectoryFill
+ } from "react-icons/go";
 import { MdOutlineSecurity } from "react-icons/md";
 import { SiMacos, SiGnubash, SiPowershell } from "react-icons/si";
-import { IoLogoJavascript } from "react-icons/io";
+import { 
+  GiBrickWall,
+  GiHammerBreak 
+} from "react-icons/gi";
+import { LuBinary } from "react-icons/lu";
+import { 
+  IoLogoJavascript,
+  IoDocumentText,
+  IoWarning, 
+} from "react-icons/io5";
 import { BiCodeCurly } from "react-icons/bi";
 import { VscDebugReverseContinue } from "react-icons/vsc";
+import { AiFillSecurityScan } from "react-icons/ai";
 
 const Skills = () => {
   return (
-    <div id="skills" className="max-w-[865px] mx-auto px-8 flex flex-col justify-center h-full">
+    <div id="skills" className="max-w-[880px] mx-auto px-8 flex flex-col justify-center h-full">
       <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-light">
         Skills
       </h2>
@@ -32,25 +47,28 @@ const Skills = () => {
         Proficient
       </h3>
       <div className="flex flex-wrap gap-4 mb-4">
-        {/* <SkillGroup
+        <SkillGroup
           text="Cybersecurity"
           icon={<MdOutlineSecurity />}
           color="white"
           contents={
             <div className="flex flex-wrap gap-4 mb-4">
-              <Skill text="Networking" icon={<FaNetworkWired />} color="white" /> 
-              <Skill text="Networking" icon={<FaNetworkWired />} color="white" />
-              <Skill text="Networking" icon={<FaNetworkWired />} color="white" />
+              <Skill text="Cryptography" icon={<LuBinary />} color="light" /> 
+              <Skill text="Network Security" icon={<GiBrickWall />} color="light" />
+              <Skill text="Vulnerability Assessment" icon={<FaBug />} color="light" />
+              <Skill text="Penetration Testing" icon={<GiHammerBreak />} color="light" />
+              <Skill text="Incident Response" icon={<IoWarning />} color="light" />
+              <Skill text="Malware Analysis" icon={<AiFillSecurityScan />} color="light" />
+              <Skill text="Risk Management" icon={<FaScaleUnbalanced />} color="light" />
+              <Skill text="Policies and Procedures" icon={<IoDocumentText />} color="light" />
+              <Skill text="Application Security" icon={<FaBug />} color="light" />
             </div>
           }
-        /> */}
-        <Skill
-          text="Cybersecurity"
-          icon={<MdOutlineSecurity />}
-          color="light"
         />
+        {/* <Skill text="Cybersecurity" icon={<MdOutlineSecurity />} color="light"/> */}
         <Skill text="Networking" icon={<FaNetworkWired />} color="light" />
         <Skill text="IT System Managment" icon={<FaComputer />} color="light" />
+        <Skill text="Active Directory" icon={<GoFileDirectoryFill />} color="light" />
         <Skill text="Windows" icon={<FaWindows />} color="light" />
         <Skill
           text="MacOS"

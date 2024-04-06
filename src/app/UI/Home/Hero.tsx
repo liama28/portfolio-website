@@ -41,7 +41,7 @@ function Home() {
             Resume <HiExternalLink className="ml-1" />
           </a>
           <Link 
-            className="group flex text-200 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-light hover:text-dark hover:bg-light cursor-pointer"
+            className="group flex text-100 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-light hover:text-dark hover:bg-light cursor-pointer"
             to="about"
             smooth={true}
             duration={500}

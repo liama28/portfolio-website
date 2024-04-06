@@ -20,7 +20,7 @@ const Contact = () => {
   const copyToClipboard = () => {
     navigator.clipboard.writeText("Liama28@gmail.com");
     toast.success("Email copied to clipboard!", {
-      position: "top-center",
+      position: "bottom-center",
       autoClose: 3000,
       hideProgressBar: false,
       closeOnClick: true,
