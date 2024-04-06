@@ -20,7 +20,7 @@ const Education = () => {
         <div id="education" className="my-64">
           <h2
             // ref={ref}
-            className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-white"
+            className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-100"
           >
             Education
           </h2>
@@ -33,7 +33,7 @@ const Education = () => {
                 scaleY: scrollYProgress,
                 filter: "drop-shadow(0px 0px 8px #66CCFF)",
               }}
-              className="absolute left-9 top-4 w-[4px] h-full bg-[#66CCFF] origin-top"
+              className="absolute left-9 top-4 w-[4px] h-full bg-primary-100 origin-top"
             />
     
             <ul className="w-full flex flex-col items-start justify-between ml-4">
@@ -43,10 +43,10 @@ const Education = () => {
               >
                 <LiIcon reference={ref_pos1} enablePulse={false} />
                 <div>
-                  <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+                  <h3 className="capitalize font-bold text-2xl sm:text-3xl text-100">
                     Iowa State University &nbsp;
                   </h3>
-                  <h3 className="capitalize font-bold text-2xl sm:text-3xl text-[#66CCFF]">
+                  <h3 className="capitalize font-bold text-2xl sm:text-3xl text-primary-100">
                     BS, Cybersecurity Engineering
                   </h3>
                   <span className="capitalize text-white/75">

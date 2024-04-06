@@ -33,7 +33,7 @@ const Navbar = () => {
                     to="top"
                     smooth={true}
                     duration={500}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                     onClick={() => {
                         window.scrollTo({
                             top: 0,
@@ -51,7 +51,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     About
                 </Link>
@@ -61,7 +61,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Education
                 </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Skills
                 </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Projects
                 </Link>
@@ -91,7 +91,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Experience
                 </Link>
@@ -101,7 +101,7 @@ const Navbar = () => {
                     smooth={true}
                     duration={500}
                     offset={-175}
-                    className='px-4 cursor-pointer font-semibold hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Contact
                 </Link>
@@ -109,12 +109,12 @@ const Navbar = () => {
             </ul>
             
             {/* Mobile Menu */}
-            <div onClick={handleClick} className='md:hidden cursor-pointer z-10 text-2xl hover:text-[#66CCFF]'>
+            <div onClick={handleClick} className='md:hidden cursor-pointer z-10 text-2xl hover:text-primary-100'>
                 {!nav ? <FaBars /> : <FaTimes />}
             </div>
             <ul className={!nav ? 'hidden' : ' md:hidden absolute top-0 left-0 w-full h-screen bg-black/75 flex flex-col justify-center items-center'}>
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="top" // Arbitrary value since react-scroll needs a 'to' prop, but we will use the 'onClick' event for scrolling
                     smooth={true}
                     duration={500}
@@ -132,7 +132,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="about"
                     smooth={true}
                     duration={500}
@@ -147,7 +147,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="education"
                     smooth={true}
                     duration={500}
@@ -162,7 +162,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="skills"
                     smooth={true}
                     duration={500}
@@ -177,7 +177,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="projects"
                     smooth={true}
                     duration={500}
@@ -192,7 +192,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="experience"
                     smooth={true}
                     duration={500}
@@ -207,7 +207,7 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-[#66CCFF]'
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="contact"
                     smooth={true}
                     duration={500}

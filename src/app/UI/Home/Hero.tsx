@@ -10,25 +10,25 @@ function Home() {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div className="bg-100 w-full h-screen">
+    <div className="bg-200 w-full h-screen">
       <ParticlesContainer onParticlesLoaded={() => setIsLoaded(true)} />
       <div
         className={`max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full relative z-1 ${
           isLoaded ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000 ease-in-out`}
       >
-        <h1 className="text-200 text-5xl sm:text-8xl font-bold mb-2">
+        <h1 className="text-100 text-5xl sm:text-8xl font-bold mb-2">
           Liam Anderson
         </h1>
-        <h2 className="text-[#66CCFF] text-3xl sm:text-6xl font-bold mb-2">
+        <h2 className="text-primary-100 text-3xl sm:text-6xl font-bold mb-2">
           <ReactTyped
-            strings={["Cybersecurity Engeer"]}
+            strings={["Cybersecurity Engineer"]}
             typeSpeed={80}
             backSpeed={80}
             startWhenVisible={true}
           />
         </h2>
-        <p className="text-200 py-4 max-w-[700px] mb-4">
+        <p className="text-100 py-4 max-w-[700px] mb-4">
           blah blah blah blah blah blah blah blah blah
         </p>
         <div className="flex gap-4">
@@ -36,12 +36,12 @@ function Home() {
             href="/Liam_Anderson_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex text-200 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-white hover:text-black hover:bg-white"
+            className="flex text-100 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-light hover:text-dark hover:bg-light"
           >
             Resume <HiExternalLink className="ml-1" />
           </a>
           <Link 
-            className="group flex text-200 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-white hover:text-black hover:bg-white"
+            className="group flex text-200 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-light hover:text-dark hover:bg-light cursor-pointer"
             to="about"
             smooth={true}
             duration={500}
@@ -58,7 +58,7 @@ function Home() {
             href="https://github.com/liama28"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-200 hover:text-[#66CCFF]"
+            className="text-light hover:text-primary-100"
           >
             <FaGithub size={35} />
           </a>
@@ -66,13 +66,13 @@ function Home() {
             href="https://www.linkedin.com/in/anderson-liam/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-200 hover:text-[#66CCFF]"
+            className="text-light hover:text-primary-100"
           >
             <FaLinkedinIn size={35} />
           </a>
           <a
             href="mailto:liama28@gmail.com"
-            className="text-200 hover:text-[#66CCFF]"
+            className="text-light hover:text-primary-100"
           >
             <FaEnvelope size={35} />
           </a>

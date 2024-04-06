@@ -14,9 +14,8 @@ import Contact from './UI/Home/Contact'
 
 export default function Page() {
   return (
-    <div className='bg-100 h-full'>
+    <div className='bg-200 h-full'>
       <div>
-        
         <Navbar />
         <Home />
         <About />

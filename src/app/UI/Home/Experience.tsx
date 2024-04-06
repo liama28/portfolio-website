@@ -20,7 +20,7 @@ const Experience = () => {
     <div id="experience" className="my-64">
       <h2
         // ref={ref}
-        className="font-semibold text-5xl sm:text-6xl mb-32 w-full text-center text-white"
+        className="font-semibold text-5xl sm:text-6xl mb-32 w-full text-center text-light"
       >
         Experience
       </h2>
@@ -33,7 +33,7 @@ const Experience = () => {
             scaleY: scrollYProgress,
             filter: "drop-shadow(0px 0px 8px #66CCFF)",
           }}
-          className="absolute left-9 top-4 w-[4px] h-full bg-[#66CCFF] origin-top"
+          className="absolute left-9 top-4 w-[4px] h-full bg-primary-100 origin-top"
         />
 
         <ul className="w-full flex flex-col items-start justify-between ml-4">
@@ -43,20 +43,20 @@ const Experience = () => {
           >
             <LiIcon reference={ref_pos1} enablePulse={true} />
             <div>
-              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-light">
                 Security Analyst &nbsp;
                 <a
                   href={"https://www.american-pcs.com"}
                   target="_blank"
-                  className="text-[#66CCFF] hover:underline"
+                  className="text-primary-100 hover:underline"
                 >
                   @ American PCS
                 </a>
               </h3>
-              <span className="capitalize text-white/75">
+              <span className="capitalize text-200">
                 February 2024 - Present | Council Bluffs, IA
               </span>
-              <p className="w-full text-white">blah blah blah blah</p>
+              <p className="w-full text-light">blah blah blah blah</p>
             </div>
           </li>
 
@@ -66,20 +66,20 @@ const Experience = () => {
           >
             <LiIcon reference={ref_pos2} enablePulse={false} />
             <div>
-              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-light">
                 Technical Support Specialist &nbsp;
                 <a
                   href={"https://www.american-pcs.com"}
                   target="_blank"
-                  className="text-[#66CCFF] hover:underline"
+                  className="text-primary-100 hover:underline"
                 >
                   @ American PCS
                 </a>
               </h3>
-              <span className="capitalize text-white/75">
+              <span className="capitalize text-200">
                 October 2023 - February 2024 | Council Bluffs, IA
               </span>
-              <p className="w-full text-white">blah blah blah blah</p>
+              <p className="w-full text-light">blah blah blah blah</p>
             </div>
           </li>
 
@@ -89,20 +89,20 @@ const Experience = () => {
           >
             <LiIcon reference={ref_pos3} enablePulse={false} />
             <div>
-              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-light">
                 IT Security Intern &nbsp;
                 <a
                   href={"https://leoadaly.com/"}
                   target="_blank"
-                  className="text-[#66CCFF] hover:underline"
+                  className="text-primary-100 hover:underline"
                 >
                   @ Leo A Daly
                 </a>
               </h3>
-              <span className="capitalize text-white/75">
+              <span className="capitalize text-200">
                 May 2022 - August 2022 | Omaha, NE
               </span>
-              <p className="w-full text-white">blah blah blah blah</p>
+              <p className="w-full text-light">blah blah blah blah</p>
             </div>
           </li>
 
@@ -112,20 +112,20 @@ const Experience = () => {
           >
             <LiIcon reference={ref_pos4} enablePulse={false} />
             <div>
-              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+              <h3 className="capitalize font-bold text-2xl sm:text-3xl text-light">
                 IT Intern &nbsp;
                 <a
                   href={"https://leoadaly.com/"}
                   target="_blank"
-                  className="text-[#66CCFF] hover:underline"
+                  className="text-primary-100 hover:underline"
                 >
                   @ Leo A Daly
                 </a>
               </h3>
-              <span className="capitalize text-white/75">
+              <span className="capitalize text-200">
                 June 2021 - August 2021 | Omaha, NE
               </span>
-              <p className="w-full text-white">blah blah blah blah</p>
+              <p className="w-full text-light">blah blah blah blah</p>
             </div>
           </li>
         </ul>

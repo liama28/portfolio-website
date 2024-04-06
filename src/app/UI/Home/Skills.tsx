@@ -25,10 +25,10 @@ import { VscDebugReverseContinue } from "react-icons/vsc";
 const Skills = () => {
   return (
     <div id="skills" className="max-w-[865px] mx-auto px-8 flex flex-col justify-center h-full">
-      <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-white">
+      <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-light">
         Skills
       </h2>
-      <h3 className="font-semibold text-3xl sm:text-4xl mb-6 text-[#66CCFF]">
+      <h3 className="font-semibold text-3xl sm:text-4xl mb-6 text-primary-100">
         Proficient
       </h3>
       <div className="flex flex-wrap gap-4 mb-4">
@@ -47,50 +47,50 @@ const Skills = () => {
         <Skill
           text="Cybersecurity"
           icon={<MdOutlineSecurity />}
-          color="white"
+          color="light"
         />
-        <Skill text="Networking" icon={<FaNetworkWired />} color="white" />
-        <Skill text="IT System Managment" icon={<FaComputer />} color="white" />
-        <Skill text="Windows" icon={<FaWindows />} color="white" />
+        <Skill text="Networking" icon={<FaNetworkWired />} color="light" />
+        <Skill text="IT System Managment" icon={<FaComputer />} color="light" />
+        <Skill text="Windows" icon={<FaWindows />} color="light" />
         <Skill
           text="MacOS"
           icon={<SiMacos className="text-3xl" />}
-          color="white"
+          color="light"
         />
-        <Skill text="Linux" icon={<FaLinux />} color="white" />
-        <Skill text="Python" icon={<FaPython />} color="white" />
-        <Skill text="Bash" icon={<SiGnubash />} color="white" />
-        <Skill text="C" icon={<BiCodeCurly />} color="white" />
-        <Skill text="Git" icon={<FaGithub />} color="white" />
+        <Skill text="Linux" icon={<FaLinux />} color="light" />
+        <Skill text="Python" icon={<FaPython />} color="light" />
+        <Skill text="Bash" icon={<SiGnubash />} color="light" />
+        <Skill text="C" icon={<BiCodeCurly />} color="light" />
+        <Skill text="Git" icon={<FaGithub />} color="light" />
       </div>
 
-      <h3 className="font-semibold text-3xl sm:text-4xl my-6 text-[#66CCFF]">
+      <h3 className="font-semibold text-3xl sm:text-4xl my-6 text-primary-100">
         Experienced
       </h3>
       <div className="flex flex-wrap gap-4 mb-4">
         <Skill
           text="Software Devleopment"
           icon={<FaLaptopCode />}
-          color="white"
+          color="light"
         />
-        <Skill text="Next.js" icon={<SiNextdotjs />} color="white" />
-        <Skill text="Java" icon={<FaJava />} color="white" />
-        <Skill text="Assembly" icon={<GoCpu />} color="white" />
+        <Skill text="Next.js" icon={<SiNextdotjs />} color="light" />
+        <Skill text="Java" icon={<FaJava />} color="light" />
+        <Skill text="Assembly" icon={<GoCpu />} color="light" />
       </div>
 
-      <h3 className="font-semibold text-3xl sm:text-4xl my-6 text-[#66CCFF]">
+      <h3 className="font-semibold text-3xl sm:text-4xl my-6 text-primary-100">
         Novice
       </h3>
       <div className="flex flex-wrap gap-4 mb-4">
-        <Skill text="React" icon={<FaReact />} color="white" />
-        <Skill text="HTML" icon={<FaHtml5 />} color="white" />
-        <Skill text="CSS" icon={<FaCss3 />} color="white" />
-        <Skill text="Javascript" icon={<IoLogoJavascript />} color="white" />
-        <Skill text="PowerShell" icon={<SiPowershell />} color="white" />
+        <Skill text="React" icon={<FaReact />} color="light" />
+        <Skill text="HTML" icon={<FaHtml5 />} color="light" />
+        <Skill text="CSS" icon={<FaCss3 />} color="light" />
+        <Skill text="Javascript" icon={<IoLogoJavascript />} color="light" />
+        <Skill text="PowerShell" icon={<SiPowershell />} color="light" />
         <Skill
           text="Reverse Engineering"
           icon={<VscDebugReverseContinue />}
-          color="white"
+          color="light"
         />
       </div>
     </div>

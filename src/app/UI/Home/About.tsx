@@ -8,13 +8,13 @@ const About = () => {
       </div>
 
       <div className="relative max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full my-64">
-        <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-white">
+        <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-100">
           About Me
         </h2>
 
         <div className="flex flex-col md:flex-row items-center">
-          <div className="w-[256px] h-[256px] bg-white rounded-full md:mr-14 order-2 md:order-1"></div>
-          <div className="text-white order-1 md:order-2 mb-8 md:mb-0">
+          <div className="w-[256px] h-[256px] bg-light rounded-full md:mr-14 order-2 md:order-1"></div>
+          <div className="text-100 order-1 md:order-2 mb-8 md:mb-0">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             <p>Nullam facilisis nisi non risus accumsan, vel congue diam bibendum.</p>
           </div>
