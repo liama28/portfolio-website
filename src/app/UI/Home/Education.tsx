@@ -46,8 +46,8 @@ const Education = () => {
                   <h3 className="capitalize font-bold text-2xl sm:text-3xl text-100">
                     Iowa State University &nbsp;
                   </h3>
-                  <h3 className="capitalize font-bold text-2xl sm:text-3xl text-primary-100">
-                    BS, Cybersecurity Engineering
+                  <h3 className="font-bold text-2xl sm:text-3xl text-primary-100">
+                    Bachelors of Science in Cybersecurity Engineering
                   </h3>
                   <span className="capitalize text-white/75">
                     August 2019 - May 2023 | Ames, IA

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { cn } from "../utils/cn";
 import ImageScroller from "../utils/ImageScroller";
 import { BentoGrid, BentoGridItem } from "./components/bento-grid";
@@ -57,6 +57,42 @@ const Project02Header = () => (
   </div>
 );
 
+const Project04Header = () => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  return (
+    <div
+      className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-dark cursor-pointer"
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <img 
+        src="Asteroids.png"
+        alt="Project 4 Header"
+        className={cn(
+          "w-full h-full object-cover rounded-xl",
+          isHovered && "opacity-0"
+        )}
+      />
+      {isHovered && (
+        <img
+          src="AsteroidsGIF.gif"
+          alt="Project 4 Header"
+          // className="w-full h-full object-cover rounded-xl"
+        />
+      )}
+    </div>
+  );
+};
+
 const items = [
   {
     title: "Capstone: Adversarial Attacks on AI Malware Detection",
@@ -83,9 +119,9 @@ const items = [
     linkUrl: "/Project03/",
   },
   {
-    title: "Computer Vision Astroids",
+    title: "Computer Vision Asteroids",
     description: "blah blah blah blah",
-    header: <Skeleton />,
+    header: <Project04Header />,
     className: "md:col-span-1 cursor-pointer",
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
     linkUrl: "/Project04/",
