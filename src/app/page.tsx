@@ -20,8 +20,8 @@ export default function Page() {
         <Home />
         <About />
         <Education />
-        <Skills />
         <Projects />
+        <Skills />
         <Experience />
         <Contact />
         <Footer />

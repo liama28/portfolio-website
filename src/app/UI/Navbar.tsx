@@ -50,7 +50,7 @@ const Navbar = () => {
                     to="about"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     About
@@ -60,7 +60,7 @@ const Navbar = () => {
                     to="education"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Education
@@ -70,7 +70,7 @@ const Navbar = () => {
                     to="skills"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Skills
@@ -80,7 +80,7 @@ const Navbar = () => {
                     to="projects"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Projects
@@ -90,7 +90,7 @@ const Navbar = () => {
                     to="experience"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Experience
@@ -100,7 +100,7 @@ const Navbar = () => {
                     to="contact"
                     smooth={true}
                     duration={500}
-                    offset={-175}
+                    offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Contact

@@ -57,6 +57,16 @@ const Project02Header = () => (
   </div>
 );
 
+const Project03Header = () => (
+  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-white/[0.2] bg-dark">
+    <ImageScroller
+      imageSrc="MIPS_CPU_1.png"
+      imageAlt="Project 3 Scrolling Header"
+    />
+  </div>
+);
+
+
 const Project04Header = () => {
   const [isHovered, setIsHovered] = useState(false);
 
@@ -93,6 +103,15 @@ const Project04Header = () => {
   );
 };
 
+const Project05Header = () => (
+  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-white/[0.2] bg-dark">
+    <ImageScroller
+      imageSrc="CyBot.png"
+      imageAlt="Project 5 Scrolling Header"
+    />
+  </div>
+);
+
 const items = [
   {
     title: "Capstone: Adversarial Attacks on AI Malware Detection",
@@ -100,7 +119,7 @@ const items = [
     header: <Project01Header />,
     className: "md:col-span-2 cursor-pointer",
     icon: <IconVirus className="h-4 w-4 text-neutral-500" />,
-    linkUrl: "/Project01/",
+    linkUrl: "/Capstone/",
   },
   {
     title: "ISU Scheduling App",
@@ -108,15 +127,15 @@ const items = [
     header: <Project02Header />,
     className: "md:col-span-1 cursor-pointer",
     icon: <IconCalendarMonth className="h-4 w-4 text-neutral-500" />,
-    linkUrl: "/Project02/",
+    linkUrl: "/AutoSched/",
   },
   {
     title: "MISP Architecture Design and Implementation",
     description: "blah blah blah blah",
-    header: <Skeleton />,
+    header: <Project03Header />,
     className: "md:col-span-1 cursor-pointer",
     icon: <IconCpu className="h-4 w-4 text-neutral-500" />,
-    linkUrl: "/Project03/",
+    linkUrl: "/MIPS/",
   },
   {
     title: "Computer Vision Asteroids",
@@ -124,15 +143,15 @@ const items = [
     header: <Project04Header />,
     className: "md:col-span-1 cursor-pointer",
     icon: <IconEye className="h-4 w-4 text-neutral-500" />,
-    linkUrl: "/Project04/",
+    linkUrl: "/Asteroids/",
   },
   {
     title: "Roomba Microcontroller Integration",
     description: "blah blah blah blah",
-    header: <Skeleton />,
+    header: <Project05Header />,
     className: "md:col-span-1 cursor-pointer",
     icon: <IconRobot className="h-4 w-4 text-neutral-500" />,
-    linkUrl: "/Project05/",
+    linkUrl: "/Roomba/",
   },
 ];
 

@@ -17,10 +17,10 @@ function Home() {
           isLoaded ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000 ease-in-out`}
       >
-        <h1 className="text-100 text-5xl sm:text-8xl font-bold mb-2">
+        <h1 className="text-100 text-5xl sm:text-8xl font-bold mb-3">
           Liam Anderson
         </h1>
-        <h2 className="text-primary-100 text-3xl sm:text-6xl font-bold mb-2">
+        <h2 className="text-primary-100 text-3xl sm:text-6xl font-bold mb-3">
           <ReactTyped
             strings={["Cybersecurity Engineer"]}
             typeSpeed={80}
@@ -28,8 +28,10 @@ function Home() {
             startWhenVisible={true}
           />
         </h2>
-        <p className="text-100 py-4 max-w-[700px] mb-4">
-          blah blah blah blah blah blah blah blah blah
+        <p className="font-semibold text-200 py-4 mb-5">
+          Welcome to my portfolio website! I've put this together to showcase my
+          skills and experience. Take a look around and please don't hesitate to
+          contact me with any exciting opportunities.
         </p>
         <div className="flex gap-4">
           <a
@@ -40,12 +42,12 @@ function Home() {
           >
             Resume <HiExternalLink className="ml-1" />
           </a>
-          <Link 
+          <Link
             className="group flex text-100 text-lg items-center font-semibold px-4 py-2.5 rounded-lg border-2 border-solid border-light hover:text-dark hover:bg-light cursor-pointer"
             to="about"
             smooth={true}
             duration={500}
-            offset={-175}
+            offset={-100}
           >
             View Work{" "}
             <HiArrowNarrowRight className="ml-1 group-hover:rotate-90 duration-300" />

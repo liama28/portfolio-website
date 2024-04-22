@@ -36,6 +36,7 @@ import {
 import { BiCodeCurly } from "react-icons/bi";
 import { VscDebugReverseContinue } from "react-icons/vsc";
 import { AiFillSecurityScan } from "react-icons/ai";
+import { TbBrandOffice } from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -80,6 +81,7 @@ const Skills = () => {
         <Skill text="Bash" icon={<SiGnubash />} color="light" />
         <Skill text="C" icon={<BiCodeCurly />} color="light" />
         <Skill text="Git" icon={<FaGithub />} color="light" />
+        {/* <Skill text="Microsoft Office" icon={<TbBrandOffice />} color="light" /> */}
       </div>
 
       <h3 className="font-semibold text-3xl sm:text-4xl my-6 text-primary-100">

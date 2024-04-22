@@ -96,7 +96,7 @@
     transform: translateY(0);
   }
   100% {
-    transform: translateY(-50%); /* Adjust this value to control the scrolling distance */
+    transform: translateY(-30%); /* Adjust this value to control the scrolling distance */
   }
 }
 
