@@ -67,16 +67,6 @@ const Navbar = () => {
                 </Link>
 
                 <Link
-                    to="skills"
-                    smooth={true}
-                    duration={500}
-                    offset={-100}
-                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
-                >
-                    Skills
-                </Link>
-
-                <Link
                     to="projects"
                     smooth={true}
                     duration={500}
@@ -84,6 +74,16 @@ const Navbar = () => {
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
                     Projects
+                </Link>
+
+                <Link
+                    to="skills"
+                    smooth={true}
+                    duration={500}
+                    offset={-100}
+                    className='px-4 cursor-pointer font-semibold hover:text-primary-100'
+                >
+                    Skills
                 </Link>
 
                 <Link
@@ -163,21 +163,6 @@ const Navbar = () => {
 
                 <Link
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
-                    to="skills"
-                    smooth={true}
-                    duration={500}
-                    offset={-175}
-                    onClick={() => {
-                        handleClick();
-                    }}
-                >
-                    <li>
-                        Skills
-                    </li>
-                </Link>
-
-                <Link
-                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="projects"
                     smooth={true}
                     duration={500}
@@ -188,6 +173,21 @@ const Navbar = () => {
                 >
                     <li>
                         Projects
+                    </li>
+                </Link>
+
+                <Link
+                    className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
+                    to="skills"
+                    smooth={true}
+                    duration={500}
+                    offset={-175}
+                    onClick={() => {
+                        handleClick();
+                    }}
+                >
+                    <li>
+                        Skills
                     </li>
                 </Link>
 

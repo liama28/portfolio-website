@@ -12,7 +12,7 @@ const Experience = () => {
   const ref_pos4 = useRef(null);
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["start end", "center start"]
+    offset: ["start end", "center start"],
     // offset: [0.9, 0],
   });
 
@@ -20,14 +20,12 @@ const Experience = () => {
     <div id="experience" className="my-64">
       <h2
         // ref={ref}
-        className="font-semibold text-5xl sm:text-6xl mb-32 w-full text-center text-light"
+        className="font-semibold text-5xl sm:text-6xl mb-20 w-full text-center text-light"
       >
         Experience
       </h2>
 
-      <div 
-        ref={ref}
-        className="mx-auto relative max-w-[650px]">
+      <div ref={ref} className="mx-auto relative max-w-[650px]">
         <motion.div
           style={{
             scaleY: scrollYProgress,
@@ -56,7 +54,13 @@ const Experience = () => {
               <span className="capitalize text-200">
                 February 2024 - Present | Council Bluffs, IA
               </span>
-              <p className="w-full text-light">blah blah blah blah</p>
+              <p className="w-full text-light">
+                Responsible for everything security. This includes managing SIEM,
+                EDR, and MDR solutions, investigating security alerts and
+                reported events, as well as conducting penetration tests.
+                Additionally, I contributed to the development of policies and
+                procedures.
+              </p>
             </div>
           </li>
 
@@ -79,7 +83,11 @@ const Experience = () => {
               <span className="capitalize text-200">
                 October 2023 - February 2024 | Council Bluffs, IA
               </span>
-              <p className="w-full text-light">blah blah blah blah</p>
+              <p className="w-full text-light">
+                Wearing many hats, I tackled a diverse array of challenges.
+                Troubleshot a wide range of issues and managed various
+                environments, IT infrastructure, and products.
+              </p>
             </div>
           </li>
 
@@ -102,7 +110,12 @@ const Experience = () => {
               <span className="capitalize text-200">
                 May 2022 - August 2022 | Omaha, NE
               </span>
-              <p className="w-full text-light">blah blah blah blah</p>
+              <p className="w-full text-light">
+                In my second summer, I transitioned to the security team.
+                Responsibilities included managing the secure service edge
+                firewall, developing procedures and playbooks, and handling
+                security events.
+              </p>
             </div>
           </li>
 
@@ -125,7 +138,12 @@ const Experience = () => {
               <span className="capitalize text-200">
                 June 2021 - August 2021 | Omaha, NE
               </span>
-              <p className="w-full text-light">blah blah blah blah</p>
+              <p className="w-full text-light">
+                My first exposure to IT and a corporate environment: Managed IT
+                equipment, administered Active Directory, workstations, and
+                other infrastructure, while troubleshooting various technical
+                issues.
+              </p>
             </div>
           </li>
         </ul>

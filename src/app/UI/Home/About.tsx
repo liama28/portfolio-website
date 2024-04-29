@@ -15,7 +15,7 @@ const About = () => {
           className="w-64 h-64 bg-light rounded-full md:mr-14 order-2 md:order-1 flex-shrink-0 bg-cover"
           style={{ backgroundImage: "url(/headshot.png)", backgroundPosition: "20% 40%", backgroundSize: "110%" }}
         ></div>
-          <div className="text-100 font-semibold order-1 md:order-2 mb-8 md:mb-0">
+          <div className="text-100 text-xl order-1 md:order-2 mb-8 md:mb-0">
             <p className="mb-4">
               I'm an Iowa State graduate, holding a degree in Cybersecurity
               Engineering. With a diverse background spanning computer science,

@@ -40,7 +40,7 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-36 bg-gradient-to-r from-[#1B50E4] to-[#024588]">
+    <div id="contact" className="py-20 bg-gradient-to-r from-[#1B50E4] to-[#024588]">
     <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
       <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-light">
         Contact Me

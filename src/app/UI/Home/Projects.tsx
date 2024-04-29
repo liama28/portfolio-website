@@ -60,7 +60,7 @@ const Project02Header = () => (
 const Project03Header = () => (
   <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-white/[0.2] bg-dark">
     <ImageScroller
-      imageSrc="MIPS_CPU_1.png"
+      imageSrc="MIPS_CPU.png"
       imageAlt="Project 3 Scrolling Header"
     />
   </div>
@@ -115,7 +115,7 @@ const Project05Header = () => (
 const items = [
   {
     title: "Capstone: Adversarial Attacks on AI Malware Detection",
-    description: "blah blah blah blah",
+    description: "August 2022 - May 2023",
     header: <Project01Header />,
     className: "md:col-span-2 cursor-pointer",
     icon: <IconVirus className="h-4 w-4 text-neutral-500" />,
