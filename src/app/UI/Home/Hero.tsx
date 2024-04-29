@@ -30,7 +30,7 @@ function Home() {
         </h2>
         <p className="font-semibold text-200 py-4 mb-5">
           Welcome to my portfolio website! I've put this together to showcase my
-          skills and experience. Take a look around and please don't hesitate to
+          work and experience. Take a look around and please don't hesitate to
           contact me with any exciting opportunities.
         </p>
         <div className="flex gap-4">
