@@ -9,6 +9,7 @@ import { TbCloudCog } from "react-icons/tb";
 import { GrMysql } from "react-icons/gr";
 import { SiPostman } from "react-icons/si";
 
+
 export default function AutoSched() {
   const goBack = () => {
     window.history.go(-1); // Go back to the previous page
@@ -40,7 +41,7 @@ export default function AutoSched() {
           <p className="mb-4">
             For this project, I worked with two other group members to create an
             application that can be used to help schedule meetings around
-            everyone's schedule. The application allowed students to import
+            everyone&#39;s schedule. The application allowed students to import
             their class schedules, create groups, and find openings that work
             for everyone. The front end of the application was an Android
             application, and the back end was comprised of a Linux server
@@ -116,6 +117,7 @@ export default function AutoSched() {
                     <img
                       src="https://avatars.githubusercontent.com/u/57200229?v=4"
                       className="block object-cover rounded-full w-7.5 h-7.5 transition-opacity duration-100 ease-out shadow-md"
+                      alt="GitHub Avatar"
                     />
                   </div>
                 </div>
@@ -124,6 +126,7 @@ export default function AutoSched() {
                     <img
                       src="/github-dark-icon.png"
                       className="block object-cover rounded w-3.5 h-3.5 transition-opacity duration-100 ease-out filter drop-shadow"
+                      alt="GitHub Icon"
                     />
                   </div>
                 </div>

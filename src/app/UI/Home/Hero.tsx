@@ -39,8 +39,8 @@ function Home() {
 
         {/* Short Blurb */}
         <p className="font-semibold text-200 py-4 mb-5 hidden sm:block">
-          Welcome to my portfolio website! I've put this together to showcase my
-          work and experience. Take a look around and please don't hesitate to
+          Welcome to my portfolio website! I&#39;ve put this together to showcase my
+          work and experience. Take a look around and please don&#39;t hesitate to
           contact me with any exciting opportunities.
         </p>
 

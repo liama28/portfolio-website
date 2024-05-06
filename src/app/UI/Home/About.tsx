@@ -27,7 +27,7 @@ const About = () => {
 
           <div className="text-white sm:text-xl order-1 md:order-2 mb-8 md:mb-0">
             <p className="mb-4">
-              I'm an Iowa State graduate, holding a degree in Cybersecurity
+              I&#39;m an Iowa State graduate, holding a degree in Cybersecurity
               Engineering. With a diverse background spanning computer science,
               engineering, software development, and IT management, with a focus
               on cybersecurity.

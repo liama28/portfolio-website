@@ -111,7 +111,7 @@ export default function Capstone() {
           <p className="mb-4">
             I was responsible for leading the backend development of the
             project. I conducted experiments, developed testing systems, created
-            the instruction insertion logic, and helped decide the project's
+            the instruction insertion logic, and helped decide the project&#39;s
             direction.
           </p>
         </div>
@@ -178,7 +178,7 @@ export default function Capstone() {
                   Attacks
                 </div>
                 <div className="mt-2 text-200">
-                  Iowa State's senior design project page
+                  Iowa State&#39;s senior design project page
                 </div>
               </div>
             </div>
@@ -216,6 +216,7 @@ export default function Capstone() {
                     <img
                       src="https://avatars.githubusercontent.com/u/57200229?v=4"
                       className="block object-cover rounded-full w-7.5 h-7.5 transition-opacity duration-100 ease-out shadow-md"
+                      alt="GitHub Avatar"
                     />
                   </div>
                 </div>
@@ -224,6 +225,7 @@ export default function Capstone() {
                     <img
                       src="/github-dark-icon.png"
                       className="block object-cover rounded w-3.5 h-3.5 transition-opacity duration-100 ease-out filter drop-shadow"
+                      alt="GitHub Avator"
                     />
                   </div>
                 </div>

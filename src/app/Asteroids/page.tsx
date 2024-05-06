@@ -89,6 +89,7 @@ const Asteroids: React.FC = () => {
                     <img
                       src="https://avatars.githubusercontent.com/u/57200229?v=4"
                       className="block h-7.5 w-7.5 rounded-full object-cover shadow-md transition-opacity duration-100 ease-out"
+                      alt="GitHub Avatar"
                     />
                   </div>
                   <div className="absolute bottom-[-2px] right-[-2px]">
@@ -96,6 +97,7 @@ const Asteroids: React.FC = () => {
                       <img
                         src="/github-dark-icon.png"
                         className="block h-3.5 w-3.5 rounded object-cover drop-shadow transition-opacity duration-100 ease-out"
+                        alt="GitHub Icon"
                       />
                     </div>
                   </div>

@@ -112,6 +112,7 @@ export default function MIPS() {
                     <img
                       src="https://avatars.githubusercontent.com/u/57200229?v=4"
                       className="block object-cover rounded-full w-7.5 h-7.5 transition-opacity duration-100 ease-out shadow-md"
+                      alt="GitHub Avatar"
                     />
                   </div>
                 </div>
@@ -120,6 +121,7 @@ export default function MIPS() {
                     <img
                       src="/github-dark-icon.png"
                       className="block object-cover rounded w-3.5 h-3.5 transition-opacity duration-100 ease-out filter drop-shadow"
+                      alt="GitHub Icon"
                     />
                   </div>
                 </div>

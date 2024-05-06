@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 
 const ImageScroller = ({
   imageSrc,
@@ -24,8 +25,8 @@ const ImageScroller = ({
       onMouseLeave={handleMouseLeave}
     >
       <img
-        src={imageSrc}
-        alt={imageAlt}
+        src={imageSrc || ""}
+        alt={imageAlt || ""}
         className={`w-full h-auto ${isHovered ? "image-scroll" : ""}`}
       />
     </div>

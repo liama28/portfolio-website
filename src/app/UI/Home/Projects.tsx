@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { cn } from "../utils/cn";
 import ImageScroller from "../utils/ImageScroller";
 import { BentoGrid, BentoGridItem } from "./components/bento-grid";
+import Image from "next/image";
 
 // Icons
 import {
@@ -43,7 +44,7 @@ const Projects = () => {
 const Project01Header = () => (
  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-dark">
    <ImageScroller
-     imageSrc="492_Poster.png"
+     imageSrc="/492_Poster.png"
      imageAlt="Project 1 Scrolling Header"
    />
  </div>
@@ -52,7 +53,7 @@ const Project01Header = () => (
 const Project02Header = () => (
  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-dark">
    <ImageScroller
-     imageSrc="AutoSched.png"
+     imageSrc="/AutoSched.png"
      imageAlt="Project 2 Scrolling Header"
    />
  </div>
@@ -61,7 +62,7 @@ const Project02Header = () => (
 const Project03Header = () => (
  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-dark">
    <ImageScroller
-     imageSrc="MIPS_CPU.png"
+     imageSrc="/MIPS_CPU.png"
      imageAlt="Project 3 Scrolling Header"
    />
  </div>
@@ -85,18 +86,22 @@ const Project04Header = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <img 
-        src="Asteroids.png"
+      <Image
+        src="/Asteroids.png"
         alt="Project 4 Header"
+        width={500}
+        height={500} 
         className={cn(
           "w-full h-full object-cover rounded-xl",
           isHovered && "opacity-0"
         )}
       />
       {isHovered && (
-        <img
-          src="AsteroidsGIF.gif"
+        <Image
+          src="/AsteroidsGIF.gif"
           alt="Project 4 Header"
+          width={500}
+          height={500}
           // className="w-full h-full object-cover rounded-xl"
         />
       )}
@@ -108,7 +113,7 @@ const Project04Header = () => {
 const Project05Header = () => (
  <div className="flex flex-1 w-full h-[50px] rounded-xl bg-dot-white/[0.2] [mask-image:radial-gradient(ellipse_at_center,white,transparent)] border border-white/[0.2] bg-dark">
    <ImageScroller
-     imageSrc="CyBot.png"
+     imageSrc="/CyBot.png"
      imageAlt="Project 5 Scrolling Header"
    />
  </div>
