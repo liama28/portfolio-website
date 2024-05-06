@@ -11,7 +11,7 @@ const Skill: React.FC<SkillProps> = ({ icon, text, color = "white" }) => {
   const textColor = `text-${color}`;
   return (
     <div
-      className={`rounded-full flex text-lg items-center font-semibold px-4 py-2.5 border-2 border-solid ${borderColor} ${textColor}`}
+      className={`rounded-full flex text-sm sm:text-lg items-center sm:font-semibold px-4 py-2.5 border-2 border-solid ${borderColor} ${textColor}`}
     >
       {icon && <span style={{ marginRight: "8px" }}>{icon}</span>}
       {text && <span>{text}</span>}

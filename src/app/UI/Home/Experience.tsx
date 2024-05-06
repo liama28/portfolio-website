@@ -2,9 +2,9 @@
 import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./components/LiIcon";
-import SubLiIcon from "./components/SubLiIcon";
 
 const Experience = () => {
+  // Referance points for Framer Motion progress
   const ref = useRef(null);
   const ref_pos1 = useRef(null);
   const ref_pos2 = useRef(null);
@@ -13,19 +13,19 @@ const Experience = () => {
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ["start end", "center start"],
-    // offset: [0.9, 0],
   });
 
   return (
     <div id="experience" className="my-64">
+      {/* Heading */}
       <h2
         // ref={ref}
         className="font-semibold text-5xl sm:text-6xl mb-20 w-full text-center text-light"
       >
         Experience
       </h2>
-
       <div ref={ref} className="mx-auto relative max-w-[650px]">
+        {/* Scroll Bar */}
         <motion.div
           style={{
             scaleY: scrollYProgress,
@@ -34,7 +34,9 @@ const Experience = () => {
           className="absolute left-9 top-4 w-[4px] h-full bg-primary-100 origin-top"
         />
 
+        {/* List */}
         <ul className="w-full flex flex-col items-start justify-between ml-4">
+          {/* Security Analyst @ American PCS */}
           <li
             ref={ref_pos1}
             className="mr-8 sm:mr-0 sm:ml-[110px] ml-[70px] flex flex-col items-left justify-between"
@@ -55,8 +57,8 @@ const Experience = () => {
                 February 2024 - Present | Council Bluffs, IA
               </span>
               <p className="w-full text-light">
-                Responsible for everything security. This includes managing SIEM,
-                EDR, and MDR solutions, investigating security alerts and
+                Responsible for everything security. This includes managing
+                SIEM, EDR, and MDR solutions, investigating security alerts and
                 reported events, as well as conducting penetration tests.
                 Additionally, I contributed to the development of policies and
                 procedures.
@@ -64,6 +66,7 @@ const Experience = () => {
             </div>
           </li>
 
+          {/* Technical Support Specialist @ American PCS */}
           <li
             ref={ref_pos2}
             className="mr-8 sm:mr-0 mt-16 sm:ml-[110px] ml-[70px] flex flex-col items-left justify-between"
@@ -91,6 +94,7 @@ const Experience = () => {
             </div>
           </li>
 
+          {/* IT Security Intern @ Leo A Daly */}
           <li
             ref={ref_pos3}
             className="mr-8 sm:mr-0 mt-16 sm:ml-[110px] ml-[70px] flex flex-col items-left justify-between"
@@ -119,6 +123,7 @@ const Experience = () => {
             </div>
           </li>
 
+          {/* IT Intern @ Leo A Daly */}
           <li
             ref={ref_pos4}
             className="mr-8 sm:mr-0 mt-16 sm:ml-[110px] ml-[70px] flex flex-col items-left justify-between"

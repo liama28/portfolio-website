@@ -1,100 +1,60 @@
 "use client";
-import Skill from "../UI/Home/components/Skill";
-import { TbLogicAnd } from "react-icons/tb";
-import { SiProcessingfoundation } from "react-icons/si";
-import { SiOpencv } from "react-icons/si";
-
-import { IoMdArrowRoundBack } from "react-icons/io";
 import Image from "next/image";
+import { IoMdArrowRoundBack } from "react-icons/io";
+import { SiOpencv, SiProcessingfoundation } from "react-icons/si";
+import Skill from "../UI/Home/components/Skill";
 
-export default function Asteroids() {
+const Asteroids: React.FC = () => {
   const goBack = () => {
-    window.history.go(-1); // Go back to the previous page
+    window.history.go(-1);
   };
 
   return (
-    <div className="min-h-screen w-full bg-200">
-      <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1A1A1A]/80 text-100 z-10">
-        <div className="pl-10">
+    <div className="min-h-screen bg-200">
+      <header className="fixed top-0 left-0 right-0 h-[70px] flex items-center justify-between px-4 bg-[#1A1A1A]/80 text-100 z-10">
+        <div className="pl-2 sm:pl-10">
           <button onClick={goBack}>
             <IoMdArrowRoundBack className="text-5xl hover:text-primary-100" />
           </button>
         </div>
-      </div>
+      </header>
 
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full">
-        <div className="pt-[200px] pb-10">
-          <h2 className="font-semibold text-5xl sm:text-6xl text-center text-primary-100 mb-6">
-            Computer Vision Asteroids
-          </h2>
-          <p className="text-xl text-200 mb-12">January 2020 - May 2020</p>
-        </div>
+      <main className="max-w-[1000px] mx-auto px-8 pt-[100px] sm:pt-[200px] pb-10">
+        <h2 className="mb-6 text-center text-4xl font-semibold text-primary-100 sm:text-6xl">
+          Computer Vision Asteroids
+        </h2>
+        <p className="mb-12 text-xl text-200">January 2020 - May 2020</p>
 
-        <h3 className="font-semibold text-3xl sm:text-4xl text-100 mb-6">
-          Overview
-        </h3>
-
-        <div className="mb-10 text-lg text-100">
-          <p className="mb-4">
-            This project is a recreation of the classic arcade-style game
-            Asteroids where the player controls a spaceship and attempts to
-            avoid asteroids and blow them up. In the version my team and I
-            developed, the ship is controlled by the player holding a model up
-            to a camera and the spaceship will copy its movement and rotation.
-            Using{" "}
-            <a
-              href="https://processing.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-100 hover:text-blue-200"
-            >
-              Processing
-            </a>
-            ,{" "}
-            <a
-              href="https://opencv.org/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-100 hover:text-blue-200"
-            >
-              OpenCV
-            </a>
-            , and an{" "}
-            <a
-              href="https://en.wikipedia.org/wiki/Kinect"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-primary-100 hover:text-blue-200"
-            >
-              Xbox Kinect
-            </a>
-             the program grabs IR depth values to track objects held by the
-            player to control the ship.
-          </p>
-          <div className="flex justify-center my-10">
-            <Image
-              src="/AsteroidsGIF.gif"
-              alt="Asteroids GIF"
-              width={400}
-              height={400}
-              className="rounded-lg shadow-md"
-            />
+        <section>
+          <h3 className="mb-6 text-3xl font-semibold text-100 sm:text-4xl">Overview</h3>
+          <div className="mb-10 text-lg text-100">
+            <p className="mb-4">
+              This project is a recreation of the classic arcade-style game Asteroids where the player controls a
+              spaceship and attempts to avoid asteroids and blow them up. In the version my team and I developed, the
+              ship is controlled by the player holding a model up to a camera and the spaceship will copy its movement
+              and rotation. Using <a href="https://processing.org/" target="_blank" rel="noopener noreferrer" className="text-primary-100 hover:text-blue-200">Processing</a>, <a href="https://opencv.org/" target="_blank" rel="noopener noreferrer" className="text-primary-100 hover:text-blue-200">OpenCV</a>, and an <a href="https://en.wikipedia.org/wiki/Kinect" target="_blank" rel="noopener noreferrer" className="text-primary-100 hover:text-blue-200">Xbox Kinect</a>, the program grabs IR depth values to track objects held by the player to control the ship.
+            </p>
+            <div className="my-10 flex justify-center">
+              <Image
+                src="/AsteroidsGIF.gif"
+                alt="Asteroids GIF"
+                width={400}
+                height={400}
+                className="rounded-lg shadow-md"
+              />
+            </div>
           </div>
-        </div>
+        </section>
 
-        <h3 className="font-semibold text-3xl sm:text-4xl text-100 mb-6">
-          My Role
-        </h3>
-
-        <div className="mb-10 text-lg text-100">
-          <p className="mb-4">
-            I lead the computer vision portion of the project. I integrated the
-            IR sensor, created algorithms for tracking objects, and translated
-            data to coordinates and orientation.
-          </p>
-        </div>
-
-        <div className="flex justify-center my-10">
+        <section>
+          <h3 className="mb-6 text-3xl font-semibold text-100 sm:text-4xl">My Role</h3>
+          <div className="mb-10 text-lg text-100">
+            <p className="mb-4">
+              I led the computer vision portion of the project. I integrated the IR sensor, created algorithms for
+              tracking objects, and translated data to coordinates and orientation.
+            </p>
+          </div>
+          <div className="my-10 flex justify-center">
             <Image
               src="/KinectAsteroids.gif"
               alt="Kinect view"
@@ -103,62 +63,51 @@ export default function Asteroids() {
               className="rounded-lg shadow-md"
             />
           </div>
+        </section>
 
-        <h3 className="font-semibold text-3xl sm:text-4xl text-100 mb-6">
-          Skills Developed
-        </h3>
+        <section>
+          <h3 className="mb-6 text-3xl font-semibold text-100 sm:text-4xl">Skills Developed</h3>
+          <div className="mb-14 flex flex-wrap gap-4">
+            <Skill text="Processing" icon={<SiProcessingfoundation />} color="light" />
+            <Skill text="OpenCV" icon={<SiOpencv />} color="light" />
+          </div>
+        </section>
 
-        <div className="flex flex-wrap gap-4 mb-14">
-          <Skill text="Processing" icon={<SiProcessingfoundation />} color="light" />
-          <Skill text="OpenCV" icon={<SiOpencv />} color="light" />
-        </div>
-
-        <h3 className="font-semibold text-3xl sm:text-4xl text-100 mb-6">
-          Links
-        </h3>
-
-        {/* GITHUB REPO */}
-        <figure className="mt-2 mb-10 shadow-md rounded-lg p-4 border border-gray-200 hover:bg-gray-100/5">
-          <a
-            href="https://github.com/ColeHunt/Kinetic_Impact"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block"
-          >
-            <div className="flex">
-              <div className="flex-1">
-                <div className="text-lg font-semibold text-100">
-                  Kinetic_Impact
+        <section>
+          <h3 className="mb-6 text-3xl font-semibold text-100 sm:text-4xl">Links</h3>
+          <figure className="mb-10 rounded-lg border border-gray-200 p-4 shadow-md hover:bg-gray-100/5">
+            <a href="https://github.com/ColeHunt/Kinetic_Impact" target="_blank" rel="noopener noreferrer" className="block">
+              <div className="flex">
+                <div className="flex-1">
+                  <div className="text-lg font-semibold text-100">Kinetic_Impact</div>
+                  <div className="mt-2 text-200">GitHub Repo</div>
                 </div>
-                <div className="mt-2 text-200">GitHub Repo</div>
               </div>
-            </div>
-            <div className="mt-4 flex items-center">
-              <div className="flex self-start h-8 w-8 m-1 ml-1 mr-3 relative">
-                <div>
-                  <div className="w-full h-full">
+              <div className="mt-4 flex items-center">
+                <div className="relative m-1 ml-1 mr-3 flex h-8 w-8 self-start">
+                  <div className="h-full w-full">
                     <img
                       src="https://avatars.githubusercontent.com/u/57200229?v=4"
-                      className="block object-cover rounded-full w-7.5 h-7.5 transition-opacity duration-100 ease-out shadow-md"
+                      className="block h-7.5 w-7.5 rounded-full object-cover shadow-md transition-opacity duration-100 ease-out"
                     />
                   </div>
-                </div>
-                <div className="absolute bottom-[-2px] right-[-2px]">
-                  <div className="w-full h-full">
-                    <img
-                      src="/github-dark-icon.png"
-                      className="block object-cover rounded w-3.5 h-3.5 transition-opacity duration-100 ease-out filter drop-shadow"
-                    />
+                  <div className="absolute bottom-[-2px] right-[-2px]">
+                    <div className="h-full w-full">
+                      <img
+                        src="/github-dark-icon.png"
+                        className="block h-3.5 w-3.5 rounded object-cover drop-shadow transition-opacity duration-100 ease-out"
+                      />
+                    </div>
                   </div>
                 </div>
+                <div className="text-sm text-gray-500">https://github.com/ColeHunt/Kinetic_Impact</div>
               </div>
-              <div className="text-sm text-gray-500">
-                https://github.com/ColeHunt/Kinetic_Impact
-              </div>
-            </div>
-          </a>
-        </figure>
-      </div>
+            </a>
+          </figure>
+        </section>
+      </main>
     </div>
   );
-}
+};
+
+export default Asteroids;

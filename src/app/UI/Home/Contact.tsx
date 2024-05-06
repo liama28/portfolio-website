@@ -1,19 +1,19 @@
 "use client";
+
 import React, { useState } from "react";
-import { FaCopy } from "react-icons/fa";
-import { IoIosMail } from "react-icons/io";
+import { FaCopy, FaLinkedin } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { FaLinkedin } from "react-icons/fa";
 
-const Contact = () => {
+const Contact: React.FC = () => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleEmailClick = () => {
     window.location.href = "mailto:Liama28@gmail.com";
   };
 
-  const handleLinkedinClick = () => {
+  const handleLinkedInClick = () => {
     window.open("https://www.linkedin.com/in/anderson-liam/", "_blank");
   };
 
@@ -40,42 +40,42 @@ const Contact = () => {
   };
 
   return (
-    <div id="contact" className="py-20 bg-gradient-to-r from-[#1B50E4] to-[#024588]">
-    <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
-      <h2 className="font-semibold text-5xl sm:text-6xl mb-24 w-full text-center text-light">
-        Contact Me
-      </h2>
-
-      <div className="flex items-center justify-center mb-11">
-        <div
-          className="rounded-l-full flex sm:text-3xl text-2xl items-center font-semibold px-4 py-2.5 border-2 border-solid border-light text-light cursor-pointer hover:bg-light hover:text-dark hover:border-white"
-          onClick={handleEmailClick}
-        >
-          <IoIosMail style={{ marginRight: "8px" }} /> Liama28@gmail.com
+    <div
+      id="contact"
+      className="py-20 bg-gradient-to-r from-[#1B50E4] to-[#024588]"
+    >
+      <div className="max-w-[1000px] mx-auto px-8 flex flex-col justify-center h-full">
+        <h2 className="text-5xl sm:text-6xl font-semibold mb-24 text-center text-light">
+          Contact Me
+        </h2>
+        <div className="flex items-center justify-center mb-11">
+          <button
+            className="rounded-l-full max-sm:rounded-full flex sm:text-3xl text-2xl items-center font-semibold px-4 py-2.5 border-2 border-solid border-light text-light cursor-pointer hover:bg-light hover:text-dark hover:border-white"
+            onClick={handleEmailClick}
+          >
+            <IoMail className="mr-2" /> Liama28@gmail.com
+          </button>
+          <button
+            className={`hidden sm:block rounded-r-full sm:text-3xl text-2xl text-light px-4 sm:py-[13px] py-[14px] border-2 border-solid border-light cursor-pointer ${
+              isClicked ? "" : "hover:bg-light hover:text-dark hover:border-white"
+            }`}
+            onClick={copyToClipboard}
+            onMouseDown={handleMouseDown}
+            onMouseUp={handleMouseUp}
+          >
+            <FaCopy />
+          </button>
         </div>
-        <div
-          className={`rounded-r-full sm:text-3xl text-2xl text-light px-4 sm:py-[13px] py-[14px] border-2 border-solid border-light cursor-point  ${
-            isClicked ? "" : "hover:bg-light hover:text-dark hover:border-white"
-          }`}
-          onClick={copyToClipboard}
-          onMouseDown={handleMouseDown}
-          onMouseUp={handleMouseUp}
-        >
-          <FaCopy />
+        <div className="flex items-center justify-center">
+          <button
+            className="rounded-full flex sm:text-3xl text-2xl items-center font-semibold px-4 py-2.5 border-2 border-solid border-light text-light cursor-pointer hover:bg-light hover:text-dark hover:border-white"
+            onClick={handleLinkedInClick}
+          >
+            <FaLinkedin className="mr-2" /> /Anderson-Liam
+          </button>
         </div>
+        <ToastContainer />
       </div>
-
-      <div className="flex items-center justify-center">
-        <div
-          className="rounded-full flex sm:text-3xl text-2xl items-center font-semibold px-4 py-2.5 border-2 border-solid border-light text-light cursor-pointer hover:bg-light hover:text-dark hover:border-white"
-          onClick={handleLinkedinClick}
-        >
-          <FaLinkedin style={{ marginRight: "8px" }} /> /Anderson-Liam
-        </div>
-      </div>
-
-      <ToastContainer />
-    </div>
     </div>
   );
 };

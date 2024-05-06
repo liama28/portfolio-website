@@ -14,16 +14,16 @@ export default function MIPS() {
   return (
     <div className="min-h-screen w-full bg-200">
       <div className="fixed w-full h-[70px] flex justify-between items-center px-4 bg-[#1A1A1A]/80 text-100 z-10">
-        <div className="pl-10">
+        <div className="pl-2 sm:pl-10">
           <button onClick={goBack}>
             <IoMdArrowRoundBack className="text-5xl hover:text-primary-100" />
           </button>
         </div>
       </div>
 
-      <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full">
-        <div className="pt-[200px] pb-10">
-          <h2 className="font-semibold text-5xl sm:text-6xl text-center text-primary-100 mb-4">
+      <div className="max-w-[1000px] mx-auto flex flex-col justify-center h-full px-8">
+        <div className="pt-[100px] sm:pt-[200px] pb-10">
+          <h2 className="font-semibold text-4xl sm:text-6xl text-center text-primary-100 mb-4">
             MISP Architecture Design and Implementation
           </h2>
           <p className="text-xl text-200 mb-12">October 2021 - December 2021</p>
