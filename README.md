@@ -1,4 +1,4 @@
-! [Hero Page Screenshot](https://github.com/liama28/portfolio-website/raw/main/hero_page.png)
+![Hero Page Screenshot](https://github.com/liama28/portfolio-website/raw/main/hero_page.png)
 
 This is a responsive portfolio website built with [Next.js](https://nextjs.org/)
 
