@@ -35,7 +35,7 @@ const Education = () => {
        />
 
        {/* Education List */}
-       <ul className="w-full flex flex-col items-start justify-between ml-4">
+       <ul className="w-full flex flex-col items-start justify-between pl-4">
          {/* Iowa State */}
          <li
            ref={refPos1}

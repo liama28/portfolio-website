@@ -14,7 +14,7 @@ const Navbar = () => {
                 <Link
                     to="top" // Arbitrary value since react-scroll needs a 'to' prop, but we will use the 'onClick' event for scrolling
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     className="text-lg font-lato cursor-pointer"
                     onClick={() => {
                         window.scrollTo({
@@ -32,7 +32,7 @@ const Navbar = () => {
                 <Link
                     to="top"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                     onClick={() => {
                         window.scrollTo({
@@ -49,7 +49,7 @@ const Navbar = () => {
                 <Link
                     to="about"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -59,7 +59,7 @@ const Navbar = () => {
                 <Link
                     to="education"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -69,7 +69,7 @@ const Navbar = () => {
                 <Link
                     to="projects"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -79,7 +79,7 @@ const Navbar = () => {
                 <Link
                     to="skills"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -89,7 +89,7 @@ const Navbar = () => {
                 <Link
                     to="experience"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -99,7 +99,7 @@ const Navbar = () => {
                 <Link
                     to="contact"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-100}
                     className='px-4 cursor-pointer font-semibold hover:text-primary-100'
                 >
@@ -117,7 +117,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="top" // Arbitrary value since react-scroll needs a 'to' prop, but we will use the 'onClick' event for scrolling
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     onClick={() => {
                         window.scrollTo({
                             top: 0,
@@ -135,7 +135,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="about"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();
@@ -150,7 +150,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="education"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();
@@ -165,7 +165,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="projects"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();
@@ -180,7 +180,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="skills"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();
@@ -195,7 +195,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="experience"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();
@@ -210,7 +210,7 @@ const Navbar = () => {
                     className='px-4 cursor-pointer py-5 text-3xl hover:text-primary-100'
                     to="contact"
                     smooth={true}
-                    duration={500}
+                    // duration={500}
                     offset={-175}
                     onClick={() => {
                         handleClick();

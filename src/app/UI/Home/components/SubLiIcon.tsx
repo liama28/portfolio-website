@@ -19,7 +19,7 @@ const SubLiIcon: React.FC<SubLiIconProps> = ({reference}) => {
                 <motion.circle cx="75" cy="50" r="9" className='stroke-white stroke-[2px]' 
                     style={{
                         filter: 'drop-shadow(0px 0px 1px #FFFFFF)',
-                        pathLength : scrollYProgress
+                        // pathLength : scrollYProgress
                     }}
                 />
                 <circle cx="75" cy="50" r="8" className='stroke-1 fill-[#66CCFF]'/>

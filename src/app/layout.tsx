@@ -9,9 +9,9 @@ export const metadata: Metadata = {
   title: 'Liam Anderson',
   description: 'Portfolio Website',
   icons: {
-    icon: '/logo_2.png',
-    shortcut: '/logo_2.png',
-    apple: '/logo_2.png',
+    icon: '/Logo.png',
+    shortcut: '/Logo.png',
+    apple: '/Logo.png',
   },
 } 
 

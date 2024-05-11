@@ -1,5 +1,5 @@
 import React from 'react'
-import { motion, useScroll } from 'framer-motion'
+import { motion, useScroll, useTransform } from 'framer-motion'
 
 type LiIconProps = {
     reference: React.RefObject<HTMLElement>;
@@ -13,6 +13,14 @@ const LiIcon: React.FC<LiIconProps> = ({ reference, enablePulse }) => {
             offset: ["center end", "center center"]
         }
     )
+
+    // const strokeDashoffset = useTransform(
+    //     scrollYProgress,
+    //     [0, 1],
+    //     [2 * Math.PI * 20, 0]
+    // );
+
+    
     return (
         <figure className='absolute left-0'>
             <svg className='-rotate-90 fill-[#1a1a1a]' width="75" height="75" viewBox='0 0 100 100'>
@@ -24,7 +32,9 @@ const LiIcon: React.FC<LiIconProps> = ({ reference, enablePulse }) => {
                     className='stroke-white stroke-[3px]' 
                     style={{
                         filter: 'drop-shadow(0px 0px 1px #FFFFFF)',
-                        pathLength : scrollYProgress
+                        // pathLength : scrollYProgress // BROKEN
+                        // strokeDasharray: 2 * Math.PI * 20,
+                        // strokeDashoffset,
                     }}
                 />
                 <circle 

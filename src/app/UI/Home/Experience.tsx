@@ -10,16 +10,15 @@ const Experience = () => {
   const ref_pos2 = useRef(null);
   const ref_pos3 = useRef(null);
   const ref_pos4 = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start end", "center start"],
-  });
+  // const { scrollYProgress } = useScroll({
+  //   target: ref,
+  //   offset: ["start end", "center start"],
+  // });
 
   return (
     <div id="experience" className="my-64">
       {/* Heading */}
       <h2
-        // ref={ref}
         className="font-semibold text-5xl sm:text-6xl mb-20 w-full text-center text-light"
       >
         Experience
@@ -28,14 +27,17 @@ const Experience = () => {
         {/* Scroll Bar */}
         <motion.div
           style={{
-            scaleY: scrollYProgress,
+            scaleY: useScroll({
+              target: ref,
+              offset: ["start end", "center start"],
+            }).scrollYProgress,
             filter: "drop-shadow(0px 0px 8px #66CCFF)",
           }}
           className="absolute left-9 top-4 w-[4px] h-full bg-primary-100 origin-top"
         />
 
         {/* List */}
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="w-full flex flex-col items-start justify-between pl-4">
           {/* Security Analyst @ American PCS */}
           <li
             ref={ref_pos1}
