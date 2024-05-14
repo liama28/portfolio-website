@@ -93,7 +93,7 @@ function Home() {
 
           {/* Email */}
           <a
-            href="mailto:liama28@gmail.com"
+            href="mailto:liam@andersonliam.com"
             className="text-light hover:text-primary-100"
           >
             <FaEnvelope size={35} />
