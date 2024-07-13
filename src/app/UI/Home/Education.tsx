@@ -67,7 +67,7 @@ const Education = () => {
                <a className="text-[#66CCFF]">Security+</a>
              </h3>
              <span className="capitalize text-white/75">
-               July 2023 - July 2026
+               July 2023 - July 2027
              </span>
              <p className="w-full text-white">
                Candidate ID: COMP001022313147
@@ -87,13 +87,35 @@ const Education = () => {
                <a className="text-[#66CCFF]">Network+</a>
              </h3>
              <span className="capitalize text-white/75">
-               August 2023 - August 2026
+               August 2023 - July 2027
              </span>
              <p className="w-full text-white">
                Candidate ID: COMP001022313147
              </p>
            </div>
          </li>
+
+         {/* CySA++ */}
+         <li
+           ref={refPos2}
+           className="mr-8 sm:mr-0 mt-16 sm:ml-[110px] ml-[70px] flex flex-col items-left justify-between"
+         >
+           <SubLiIcon reference={refPos2} />
+           <div>
+             <h3 className="capitalize font-bold text-2xl sm:text-3xl text-white">
+               CompTIA &nbsp;
+               <a className="text-[#66CCFF]">Cybersecurity Analyst (CySA+)+</a>
+             </h3>
+             <span className="capitalize text-white/75">
+               July 2024 - July 2027
+             </span>
+             <p className="w-full text-white">
+               Candidate ID: COMP001022313147
+             </p>
+           </div>
+         </li>
+
+
        </ul>
      </div>
    </div>
