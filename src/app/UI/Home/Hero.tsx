@@ -31,7 +31,7 @@ function Home() {
         <h2 className="text-primary-100 text-2xl sm:text-6xl font-bold mb-3">
           <ReactTyped
             strings={["Cybersecurity Engineer"]}
-            typeSpeed={90}
+            typeSpeed={75}
             backSpeed={80}
             startWhenVisible={true}
           />
@@ -93,7 +93,7 @@ function Home() {
 
           {/* Email */}
           <a
-            href="mailto:liam@andersonliam.com"
+            href="mailto:liam@liama.dev"
             className="text-light hover:text-primary-100"
           >
             <FaEnvelope size={35} />
